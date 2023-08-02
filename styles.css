@@ -1,51 +1,71 @@
+:root {
+    --white: #fafafa;
+    --black: #0c0c0c;
+    --box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
 
-html{
+html {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Montserrat', sans-serif;
+        background-color: #4158D0;
+        background-image: linear-gradient(349deg, #4158D0 3%, #C850C0 28%, #FFCC70 45%, #ffffff 67%, #ffffff 94%);
 }
 
-.navbar{
+.navbar {
     width: 100%;
-    margin: 0 auto;
-    padding: 0 1vw;
-    border-radius: 50px;
     position: absolute;
+    background: rgba(255, 254, 254, 0.41);
+        box-shadow: var(--box-shadow);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        max-height: 10vh;
+        z-index: 999;
 }
-.navbar-nav{
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+.navbar-toggler {
+    border: none;
 }
-.navbar-brand{
+.dropdown-menu {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: var(--box-shadow);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(141, 141, 141, 0.106);
+}
+
+.dropdown-menu li:hover {
+    background-color: #e9ecef;
+    border-radius: 16px;
+}
+
+.btn {
+    border: none;
+}
+.navbar-brand {
     width: 18vw;
     max-width: 150px;
 }
 
-.navbar-toggler-icon:active{
-    outline-offset: none;
-}
-.nav-item{
-    font-weight: bold;
-}
-
-section{
+section {
     width: 100%;
     height: 100vh;
-    margin: 0 auto;
+    margin: 50px auto;
+        border: 1px solid transparent;
 }
 
-.hero{
+.hero {
     width: 100%;
-    height:auto;
+    height: auto;
+        display: flex;
 }
 
-.bg-img{
+.bg-img {
     width: 100%;
     height: auto;
     position: relative;
@@ -53,6 +73,123 @@ section{
 }
 
 
+.hero-content {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 10vh;
+    margin: 5vw 0px;
+    display: flex;
+    flex-direction: column;
+}
 
+.hero-text-h1 {
+    font-size: 10vw;
+    font-weight: bold;
+    margin: 0px 15vw;
+    color: var(--white);
+    text-shadow: -2px 0px 20px black;
+}
 
+.hero-text-h3 {
+    margin: 5vw 15vw;
+    font-size: 4vw;
+    color: var(--black);
+    font-weight: normal;
+}
 
+.hero span {
+    display: grid;
+}
+
+.product-sec-btn {
+    margin: 0px auto;
+    width: fit-content;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: var(--box-shadow);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    font-weight: bold;
+    color: var(--black);
+    z-index: 3;
+}
+
+.product-sec-btn:hover {
+    box-shadow: inset 0 0 60px whitesmoke,
+        inset 10px 0 80px #f0f,
+        inset -10px 0 80px #0ff,
+        inset 10px 0 300px #f0f,
+        inset -10px 0 300px #0ff,
+        0 0 50px #fff,
+        -10px 0 80px #f0f,
+        10px 0 80px #0ff;
+}
+
+.about {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: var(--box-shadow);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    padding: 8vh 7vw;
+    text-align: justify;
+    display: block;
+    margin: 15px auto;
+    width: auto;
+}
+
+fieldset {
+    border-top: 2px dashed;
+    border-color: #ccc;
+}
+
+legend {
+    float: inherit;
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+}
+
+.product-card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.product-card-container .card {
+    margin: 10px 10px;
+    font-size: 1vw;
+}
+
+.wedding-card {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: var(--box-shadow);
+    backdrop-filter: blur(8.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.wedding-card .card-img-overlay {
+    padding: 24px;
+}
+
+.card-content {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.6071428571428572) 100%);
+    height: 100%;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.card .btn {
+    width: fit-content;
+    margin: 0px auto;
+    font-size: 1vw;
+}
