@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-        background-color: #4158D0;
+    background-color: #4158D0;
         background-image: linear-gradient(349deg, #4158D0 3%, #C850C0 28%, #FFCC70 45%, #ffffff 67%, #ffffff 94%);
 }
 
@@ -21,15 +21,17 @@ body {
     width: 100%;
     position: absolute;
     background: rgba(255, 254, 254, 0.41);
-        box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
         backdrop-filter: blur(6.1px);
         -webkit-backdrop-filter: blur(6.1px);
         max-height: 10vh;
         z-index: 999;
 }
+
 .navbar-toggler {
     border: none;
 }
+
 .dropdown-menu {
     background: rgb(255, 255, 255);
     border-radius: 16px;
@@ -44,9 +46,11 @@ body {
     border-radius: 16px;
 }
 
+
 .btn {
     border: none;
 }
+
 .navbar-brand {
     width: 18vw;
     max-width: 150px;
@@ -56,13 +60,14 @@ section {
     width: 100%;
     height: 100vh;
     margin: 50px auto;
-        border: 1px solid transparent;
+    border: 1px solid transparent;
 }
 
 .hero {
     width: 100%;
     height: auto;
-        display: flex;
+    display: flex;
+
 }
 
 .bg-img {
@@ -156,13 +161,9 @@ legend {
 
 .product-card-container {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-}
-
-.product-card-container .card {
-    margin: 10px 10px;
-    font-size: 1vw;
+    flex-direction: row;
+        justify-content: center;
 }
 
 .wedding-card {
@@ -172,24 +173,41 @@ legend {
     backdrop-filter: blur(8.2px);
     -webkit-backdrop-filter: blur(8.2px);
     border: 1px solid rgba(255, 255, 255, 0.24);
+    margin: 10px 10px;
+        height: auto;
+        max-width: 420px;
 }
 
-.wedding-card .card-img-overlay {
-    padding: 24px;
+.card-img-overlay {
+    display: none;
 }
 
 .card-content {
     background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.6071428571428572) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(43, 43, 43, 0.6166841736694677) 32%, rgba(0, 0, 0, 0.6755077030812324) 100%);
     height: 100%;
     border-radius: 6px;
     display: flex;
     flex-direction: column;
     justify-content: end;
+    padding-top: 10%;
+        font-size: 2vw;
+        padding: 10px;
 }
+
 
 .card .btn {
     width: fit-content;
     margin: 0px auto;
-    font-size: 1vw;
+    font-size: 2vw;
+    }
+    
+    @media only screen and (min-width:1000px) {
+        .card-content {
+            font-size: 12px;
+        }
+    
+        .card .btn {
+            font-size: 1.2vw;
+        }
 }
