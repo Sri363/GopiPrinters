@@ -13,8 +13,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #4158D0;
-    background-image: linear-gradient(349deg, #4158D0 3%, #C850C0 28%, #FFCC70 45%, #ffffff 67%, #ffffff 94%);
+    background: #FFFFFF;
+        background: -webkit-linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 60%, #FF6F91 69%, #D65DB1 80%, #845EC2 100%);
+        background: -moz-linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 60%, #FF6F91 69%, #D65DB1 80%, #845EC2 100%);
+        background: linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 60%, #FF6F91 69%, #D65DB1 80%, #845EC2 100%);
 }
 
 .navbar {
