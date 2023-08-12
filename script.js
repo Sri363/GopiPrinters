@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    //loader animation
+    $(".loader-wrapper").fadeOut("slow");
+
+
     let offset = { offset: "70%" };
 
     $(".hero-text-h1").addClass(

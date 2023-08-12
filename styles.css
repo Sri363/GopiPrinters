@@ -4,6 +4,51 @@
     --box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
+/* loader style */
+.loader-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid red;
+    background-color: #fdfbfb;
+    z-index: 9999;
+
+}
+
+.custom-loader {
+    --r1: 154%;
+    --r2: 68.5%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background:
+        radial-gradient(var(--r1) var(--r2) at top, #0000 79.5%, #77cbff 80%),
+        radial-gradient(var(--r1) var(--r2) at bottom, #77cbff 79.5%, #0000 80%),
+        radial-gradient(var(--r1) var(--r2) at top, #0000 79.5%, #77cbff 80%),
+        #D2D2D2;
+    background-size: 50.5% 220%;
+    background-position: -100% 0%, 0% 0%, 100% 0%;
+    background-repeat: no-repeat;
+    animation: p9 1s infinite linear;
+}
+
+@keyframes p9 {
+    33% {
+        background-position: 0% 33%, 100% 33%, 200% 33%
+    }
+
+    66% {
+        background-position: -100% 66%, 0% 66%, 100% 66%
+    }
+
+    100% {
+        background-position: 0% 100%, 100% 100%, 200% 100%
+    }
+}
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -12,11 +57,13 @@ html {
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
     font-family: 'Montserrat', sans-serif;
     background: #FFFFFF;
-        background: -webkit-linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 60%, #FF6F91 69%, #D65DB1 80%, #845EC2 100%);
-        background: -moz-linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 60%, #FF6F91 69%, #D65DB1 80%, #845EC2 100%);
-        background: linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 60%, #FF6F91 69%, #D65DB1 80%, #845EC2 100%);
+    background: -webkit-linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 60%, #FF6F91 69%, #D65DB1 80%, #845EC2 100%);
+    background: -moz-linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 60%, #FF6F91 69%, #D65DB1 80%, #845EC2 100%);
+    background: linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 60%, #FF6F91 69%, #D65DB1 80%, #845EC2 100%);
 }
 
 .navbar {
