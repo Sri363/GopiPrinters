@@ -4,7 +4,7 @@ $(document).ready(function () {
     $(".loader-wrapper").fadeOut("slow");
 
 
-    let offset = { offset: "70%" };
+    let offset = { offset: "80%" };
 
     $(".hero-text-h1").addClass(
         "animate__animated animate__fadeInUp"

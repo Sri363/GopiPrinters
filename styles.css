@@ -61,9 +61,9 @@ body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
     background: #FFFFFF;
-    background: -webkit-linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 60%, #FF6F91 69%, #D65DB1 80%, #845EC2 100%);
-    background: -moz-linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 60%, #FF6F91 69%, #D65DB1 80%, #845EC2 100%);
-    background: linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 60%, #FF6F91 69%, #D65DB1 80%, #845EC2 100%);
+    background: -webkit-linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 55%, #FF6F91 65%, #D65DB1 75%, #845EC2 89%, #ffffff 100%);
+        background: -moz-linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 55%, #FF6F91 65%, #D65DB1 75%, #845EC2 89%, #ffffff 100%);
+        background: linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 55%, #FF6F91 65%, #D65DB1 75%, #845EC2 89%, #ffffff 100%);
 }
 
 .navbar {
@@ -109,9 +109,10 @@ body {
 
 section {
     width: 100%;
-    height: 100vh;
+    height: auto;
     margin: 50px auto;
     border: 1px solid transparent;
+    overflow-x: hidden;
 }
 
 .hero {
@@ -264,6 +265,39 @@ legend {
     font-size: 2vw;
 }
 
+.contact-container {
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+.contact-one {
+    display: flex;
+    width: fit-content;
+    padding: 10px;
+    justify-content: center;
+}
+
+.contact-sec-1st-container,
+.contact-sec-2nd-container,
+.contact-sec-3rd-container {
+    padding: 10px;
+    margin: 0px 10px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.contact-two {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    width: fit-content;
+}
 @media only screen and (min-width:1000px) {
     .card-content {
         font-size: 12px;
