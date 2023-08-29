@@ -62,7 +62,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background: #FFFFFF;
     background: -webkit-linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 55%, #FF6F91 65%, #D65DB1 75%, #845EC2 89%, #ffffff 100%);
-        background: -moz-linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 55%, #FF6F91 65%, #D65DB1 75%, #845EC2 89%, #ffffff 100%);
+    background: -moz-linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 55%, #FF6F91 65%, #D65DB1 75%, #845EC2 89%, #ffffff 100%);
         background: linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 55%, #FF6F91 65%, #D65DB1 75%, #845EC2 89%, #ffffff 100%);
 }
 
@@ -275,6 +275,7 @@ legend {
 
 .contact-one {
     display: flex;
+    flex-wrap: wrap;
     width: fit-content;
     padding: 10px;
     justify-content: center;
@@ -298,6 +299,7 @@ legend {
     justify-content: center;
     width: fit-content;
 }
+
 @media only screen and (min-width:1000px) {
     .card-content {
         font-size: 12px;
