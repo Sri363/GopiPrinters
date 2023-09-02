@@ -63,7 +63,7 @@ body {
     background: #FFFFFF;
     background: -webkit-linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 55%, #FF6F91 65%, #D65DB1 75%, #845EC2 89%, #ffffff 100%);
     background: -moz-linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 55%, #FF6F91 65%, #D65DB1 75%, #845EC2 89%, #ffffff 100%);
-        background: linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 55%, #FF6F91 65%, #D65DB1 75%, #845EC2 89%, #ffffff 100%);
+    background: linear-gradient(to bottom, #FFFFFF 19%, #F9F871 35%, #FFC75F 45%, #FF9671 55%, #FF6F91 65%, #D65DB1 75%, #845EC2 89%, #ffffff 100%);
 }
 
 .navbar {
@@ -186,7 +186,8 @@ section {
 }
 
 .about,
-.product-card {
+.product-card,
+.alert-container .card {
     opacity: 0;
 }
 
@@ -266,11 +267,10 @@ legend {
 }
 
 .contact-container {
-    box-shadow: var(--box-shadow);
-    background-color: var(--white);
     display: flex;
     align-items: start;
     justify-content: space-evenly;
+    background-color: var(--white);
 }
 
 .contact-one {
@@ -290,6 +290,7 @@ legend {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.562));
 }
 
 
@@ -300,6 +301,56 @@ legend {
     width: fit-content;
 }
 
+.card-ss {
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.753) 0%, rgba(255, 255, 255, 0.808) 32%, rgba(255, 255, 255, 0.774) 100%);
+}
+
+.card-ss .card-content {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.alert-container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background-color: transparent;
+    position: fixed;
+    top: 0px;
+}
+
+.alert-container .card .card-content {
+    background: white;
+    font-size: medium;
+}
+
+.alert-container .card .btn {
+    padding: 5px;
+    width: 60px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    font-weight: bold;
+    color: var(--black);
+}
+
+.alert-container .card .btn:hover {
+    box-shadow: inset 0 0 60px whitesmoke,
+        inset 10px 0 80px #f0f,
+        inset -10px 0 80px #0ff,
+        inset 10px 0 300px #f0f,
+        inset -10px 0 300px #0ff,
+        0 0 50px #fff,
+        -10px 0 80px #f0f,
+        10px 0 80px #0ff;
+}
 @media only screen and (min-width:1000px) {
     .card-content {
         font-size: 12px;

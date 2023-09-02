@@ -3,7 +3,6 @@ $(document).ready(function () {
     //loader animation
     $(".loader-wrapper").fadeOut("slow");
 
-
     let offset = { offset: "80%" };
 
     $(".hero-text-h1").addClass(
@@ -22,16 +21,23 @@ $(document).ready(function () {
         }
     )
 
+    // alert ok button
+
+    $(".ok-btn").click(function () {
+        $(".alert-container").hide();
+    })
+
     //adding waypoint animation
+
     $(".about").waypoint(function () {
         $(".about").addClass("animate__animated animate__fadeInRight")
     }, offset);
-
     $(".product-card:nth-of-type(1)").waypoint(function () {
-        $(".product-card:nth-of-type(1)").addClass("animate__animated animate__fadeInUpBig")
+        $(".product-card:nth-of-type(1)").addClass("animate__animated animate__fadeInUpBig");
     }, offset)
     $(".product-card:nth-of-type(2)").waypoint(function () {
-        $(".product-card:nth-of-type(2)").addClass("animate__animated animate__fadeInUpBig")
+        $(".product-card:nth-of-type(2)").addClass("animate__animated animate__fadeInUpBig");
+        $(".alert-container .card").addClass("animate__animated animate__bounceIn");
     }, offset)
     $(".product-card:nth-of-type(3)").waypoint(function () {
         $(".product-card:nth-of-type(3)").addClass("animate__animated animate__fadeInUpBig")
