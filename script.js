@@ -3,6 +3,8 @@ $(document).ready(function () {
     //loader animation
     $(".loader-wrapper").fadeOut("slow");
 
+
+
     let offset = { offset: "80%" };
 
     $(".hero-text-h1").addClass(
@@ -22,7 +24,7 @@ $(document).ready(function () {
     )
 
     // alert ok button
-
+    $(".alert-container").hide()
     $(".ok-btn, .cncl-btn").click(function () {
         $(".alert-container").hide();
     })
@@ -37,6 +39,7 @@ $(document).ready(function () {
     }, offset)
     $(".product-card:nth-of-type(2)").waypoint(function () {
         $(".product-card:nth-of-type(2)").addClass("animate__animated animate__fadeInUpBig");
+        $(".alert-container").show()
         $(".alert-container .card").addClass("animate__animated animate__bounceIn");
     }, offset)
     $(".product-card:nth-of-type(3)").waypoint(function () {

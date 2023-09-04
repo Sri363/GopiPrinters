@@ -305,46 +305,47 @@ legend {
     padding: 10px;
     box-shadow: var(--box-shadow);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.836) 0%, rgba(255, 255, 255, 0.836) 32%, rgba(255, 255, 255, 0.836) 100%);
+}
+
+.card-ss .fa-circle-xmark {
+    width: fit-content;
+    position: absolute;
+    right: -5px;
+    top: 10px;
+}
+
+.card-ss .fa-circle-xmark:hover,
+.card-ss .fa-circle-xmark:focus,
+.card-ss .fa-circle-xmark:active {
+    animation: rotate 0.2s linear;
+    transform: scale(1.1);
+}
+
+
+.fa-box-open,
+.fa-house,
+.fa-phone,
+.fa-square-instagram,
+.fa-square-facebook {
+    padding: 8px;
+    padding-left: 0px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
     }
-    
-    .card-ss .fa-circle-xmark {
-        width: fit-content;
-        position: absolute;
-        right: -5px;
-        top: 10px;
+
+    to {
+        transform: rotate(90deg);
     }
-    
-    .card-ss .fa-circle-xmark:hover,
-    .card-ss .fa-circle-xmark:focus,
-    .card-ss .fa-circle-xmark:active {
-        animation: rotate 0.2s linear;
-        transform: scale(1.1);
-    }
-    
-    
-    .fa-box-open,
-    .fa-house,
-    .fa-phone,
-    .fa-square-instagram,
-    .fa-square-facebook {
-        padding: 8px;
-        padding-left: 0px;
-    }
-    
-    @keyframes rotate {
-        from {
-            transform: rotate(0deg);
-        }
-    
-        to {
-            transform: rotate(90deg);
-        }
 }
 
 .card-ss .card-content {
     font-weight: 600;
     text-transform: uppercase;
 }
+
 
 .alert-container {
     width: 100%;
@@ -403,17 +404,18 @@ legend {
     .nav-menu:hover {
         background-color: #e9ecef;
     }
-.contact-sec-1st-container {
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    width: 100%;
-}
 
-.contact-sec-2nd-container,
-.contact-sec-3rd-container {
-    font-size: 14px;
-}
+        .contact-sec-1st-container {
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .contact-sec-2nd-container,
+        .contact-sec-3rd-container {
+            font-size: 14px;
+        }
 }
 
 @media only screen and (max-width: 400px) {
