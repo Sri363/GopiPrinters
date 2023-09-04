@@ -23,7 +23,7 @@ $(document).ready(function () {
 
     // alert ok button
 
-    $(".ok-btn").click(function () {
+    $(".ok-btn, .cncl-btn").click(function () {
         $(".alert-container").hide();
     })
 
