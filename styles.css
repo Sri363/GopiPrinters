@@ -18,6 +18,13 @@
 
 }
 
+a:link,
+a:active,
+a:visited,
+a:focus {
+    text-decoration: none;
+    color: var(--black);
+}
 .custom-loader {
     --r1: 154%;
     --r2: 68.5%;
@@ -171,7 +178,7 @@ section {
     border: 1px solid rgba(255, 255, 255, 0.24);
     font-weight: bold;
     color: var(--black);
-    z-index: 3;
+    z-index: 90;
 }
 
 .product-sec-btn:hover {
@@ -326,7 +333,8 @@ legend {
 .fa-house,
 .fa-phone,
 .fa-square-instagram,
-.fa-square-facebook {
+.fa-square-facebook,
+.fa-map-location-dot {
     padding: 8px;
     padding-left: 0px;
 }
@@ -354,7 +362,7 @@ legend {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    z-index: 10;
     background-color: transparent;
     position: fixed;
     top: 0px;
