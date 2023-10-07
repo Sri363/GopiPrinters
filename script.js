@@ -24,10 +24,10 @@ $(document).ready(function () {
     )
 
     // alert ok button
-    $(".ok-btn, .cncl-btn").click(function () {
-        $(".alert-container").hide();
+    $(".ok-btn, .cncl-btn").click(function(){
+        $(".alert-container").hide() ;
     })
-
+    
     //adding waypoint animation
 
     $(".about").waypoint(function () {
@@ -39,13 +39,13 @@ $(document).ready(function () {
 
     $(".product-card:nth-of-type(1)").waypoint(function () {
         $(".alert-container").addClass("animate__animated animate__bounceIn");
-        $(".alert-container").css("z-index", "999")
+        $(".alert-container").css("z-index","999")
     }, offset)
 
     $(".product-card:nth-of-type(2)").waypoint(function () {
         $(".product-card:nth-of-type(2)").addClass("animate__animated animate__fadeInUpBig");
     }, offset)
-
+    
     $(".product-card:nth-of-type(3)").waypoint(function () {
         $(".product-card:nth-of-type(3)").addClass("animate__animated animate__fadeInUpBig")
     }, offset)
